@@ -26,7 +26,9 @@ npm run webdriver-manager update
 
 npm run webdriver-manager start (this must always be running for protractor to work)
 
-Create a test directory
+Create a test directory in root
+
+Create a e2e directory
 
 Create a protractor.conf.js file
 
