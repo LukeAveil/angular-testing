@@ -1,7 +1,8 @@
 describe("app", function() {
 
-  it("should get home page title", function() {
+  it("has displays a todo", function() {
     browser.get('/');
+    var todo = $$('#todo');
     expect(browser.getTitle()).toEqual("Angular TDD");
   });
 

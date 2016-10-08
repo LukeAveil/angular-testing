@@ -22,15 +22,13 @@ Install protractor
 
 Add npm script alias for webdriver-manager: ./node_modules/protractor/bin/webdriver-manager
 
-npm run webdriver-manager update
+Add npm script alias for protractor: ./node_modules/protractor/bin/protractor
 
-npm run webdriver-manager start (this must always be running for protractor to work)
+npm run webdriver-manager update
 
 Create a test directory in root
 
-Create a e2e directory
-
-Create a protractor.conf.js file
+Create a protractor.conf.js file in test directory
 
 exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
@@ -40,6 +38,7 @@ exports.config = {
 
 create e2e directory in test (test files go in here)
 
-Add npm script alias for protractor: ./node_modules/protractor/bin/protractor
+
+npm run webdriver-manager start (this must always be running for protractor to work along with http-server)
 
 To run protractor tests: npm run protractor test/protractor.conf.js
