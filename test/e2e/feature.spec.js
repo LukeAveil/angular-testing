@@ -18,4 +18,14 @@ describe("Todos tracker", function() {
     expect(todo).toEqual('NewToDo: not completed');
   });
 
+  it('can remove a todo', function() {
+    browser.get('/');
+
+    var todos = $$('#todos p');
+
+    $('#remove-todos').click();
+
+    expect(todos.count()).toEqual(1);
+  });
+
 });

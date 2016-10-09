@@ -6,4 +6,8 @@ angularTesting.controller('ToDoController', [function() {
   self.addTodo = function(todoText) {
     self.todos.push({text: todoText, completed: false});
   };
+
+  self.removeTodo = function() {
+    self.todos.pop();
+  };
 }]);

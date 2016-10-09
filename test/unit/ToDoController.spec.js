@@ -23,4 +23,12 @@ describe('ToDoController', function() {
 
     expect(ctrl.todos.pop()).toEqual(todo);
   });
+
+  it('can remove the last todo', function() {
+    var initialCount = ctrl.todos.length;
+
+    ctrl.removeTodo();
+
+    expect(ctrl.todos.length).toEqual(initialCount - 1);
+  });
 });
